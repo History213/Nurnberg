@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нюрнбергский процесс</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nuremberg_Trials.jpg/1280px-Nuremberg_Trials.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 253, 208, 0.9);
+            padding: 20px;
+            border: 2px solid #8b4513;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #8b4513;
+            font-size: 2.2em;
+            text-decoration: underline;
+        }
+        h2 {
+            color: #a0522d;
+            border-bottom: 1px dashed #8b4513;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .note {
+            background-color: #fffacd;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #8b4513;
+            border-radius: 5px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #8b0000;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Стили для слайдера */
+        .slider {
+            text-align: center;
+            position: relative;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .slider img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border: 3px solid #8b4513;
+            border-radius: 10px;
+            display: none;
+            margin: 0 auto;
+        }
+        .slider img.active {
+            display: block;
+        }
+        .slider .person-info {
+            background-color: #fffacd;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: none;
+            width: 300px;
+            text-align: left;
+        }
+        .slider .person-info.active {
+            display: block;
+        }
+        .slider button {
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .slider button:hover {
+            background-color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Нюрнбергский процесс</h1>
+
+        <div class="note">
+            <h2>Общая информация</h2>
+            <p>Нюрнбергский процесс (20 ноября 1945 – 1 октября 1946) — суд над лидерами нацистской Германии после Второй мировой войны. Проходил в Нюрнберге, Германия.</p>
+            <p>Обвиняемые: 22 высокопоставленных нациста (изначально 24, но Роберт Лей покончил с собой, а Густав Крупп был признан недееспособным).</p>
+            <p>Обвинения: преступления против мира, военные преступления, преступления против человечности.</p>
+        </div>
+
+        <div class="note">
+            <h2>Ключевые фигуры и приговоры</h2>
+            <div class="slider">
+                <!-- Картинки обвиняемых -->
+                <img src="images/goering.jpg" alt="Герман Геринг" class="active">
+                <img src="images/hess.jpg" alt="Рудольф Гесс">
+                <img src="images/ribbentrop.jpg" alt="Йоахим фон Риббентроп">
+                <img src="images/kaltenbrunner.jpg" alt="Эрнст Кальтенбруннер">
+                <img src="images/keitel.jpg" alt="Вильгельм Кейтель">
+                <img src="images/rosenberg.jpg" alt="Альфред Розенберг">
+                <img src="images/frank.jpg" alt="Ганс Франк">
+                <img src="images/frick.jpg" alt="Вильгельм Фрик">
+                <img src="images/streicher.jpg" alt="Юлиус Штрейхер">
+                <img src="images/funk.jpg" alt="Вальтер Функ">
+                <img src="images/doenitz.jpg" alt="Карл Дёниц">
+                <img src="images/raeder.jpg" alt="Эрих Редер">
+                <img src="images/schirach.jpg" alt="Балдур фон Ширах">
+                <img src="images/sauckel.jpg" alt="Фриц Заукель">
+                <img src="images/jodl.jpg" alt="Альфред Йодль">
+                <img src="images/papen.jpg" alt="Франц фон Папен">
+                <img src="images/seyss-inquart.jpg" alt="Артур Зейсс-Инкварт">
+                <img src="images/speer.jpg" alt="Альберт Шпеер">
+                <img src="images/neurath.jpg" alt="Константин фон Нейрат">
+                <img src="images/fritzsche.jpg" alt="Ганс Фриче">
+                <img src="images/schacht.jpg" alt="Ялмар Шахт">
+
+                <!-- Информация об обвиняемых -->
+                <div class="person-info active">
+                    <h3>Герман Геринг</h3>
+                    <p><span class="highlight">Должность:</span> Рейхсмаршал, глава Люфтваффе.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь (покончил с собой перед казнью).</p>
+                </div>
+                <div class="person-info">
+                    <h3>Рудольф Гесс</h3>
+                    <p><span class="highlight">Должность:</span> Заместитель фюрера по партии.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира.</p>
+                    <p><span class="highlight">Приговор:</span> Пожизненное заключение.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Йоахим фон Риббентроп</h3>
+                    <p><span class="highlight">Должность:</span> Министр иностранных дел.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Эрнст Кальтенбруннер</h3>
+                    <p><span class="highlight">Должность:</span> Глава РСХА.</p>
+                    <p><span class="highlight">Обвинения:</span> Военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Вильгельм Кейтель</h3>
+                    <p><span class="highlight">Должность:</span> Начальник штаба Верховного командования вермахта (OKW).</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Альфред Розенберг</h3>
+                    <p><span class="highlight">Должность:</span> Министр по делам оккупированных восточных территорий, идеолог нацизма.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Ганс Франк</h3>
+                    <p><span class="highlight">Должность:</span> Генерал-губернатор оккупированной Польши.</p>
+                    <p><span class="highlight">Обвинения:</span> Военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Вильгельм Фрик</h3>
+                    <p><span class="highlight">Должность:</span> Министр внутренних дел.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Юлиус Штрейхер</h3>
+                    <p><span class="highlight">Должность:</span> Главный редактор антисемитской газеты "Der Stürmer".</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Вальтер Функ</h3>
+                    <p><span class="highlight">Должность:</span> Министр экономики, президент Рейхсбанка.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Пожизненное заключение.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Карл Дёниц</h3>
+                    <p><span class="highlight">Должность:</span> Гросс-адмирал, командующий ВМФ, президент Рейха после смерти Гитлера.</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против мира, военные преступления.</p>
+                    <p><span class="highlight">Приговор:</span> 10 лет тюрьмы.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Эрих Редер</h3>
+                    <p><span class="highlight">Должность:</span> Гросс-адмирал, командующий ВМФ до 1943 года.</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против мира, военные преступления.</p>
+                    <p><span class="highlight">Приговор:</span> Пожизненное заключение (освобождён в 1955 году).</p>
+                </div>
+                <div class="person-info">
+                    <h3>Балдур фон Ширах</h3>
+                    <p><span class="highlight">Должность:</span> Лидер Гитлерюгенда, гауляйтер Вены.</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> 20 лет тюрьмы.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Фриц Заукель</h3>
+                    <p><span class="highlight">Должность:</span> Генеральный уполномоченный по использованию рабочей силы.</p>
+                    <p><span class="highlight">Обвинения:</span> Военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Альфред Йодль</h3>
+                    <p><span class="highlight">Должность:</span> Начальник оперативного штаба OKW.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Франц фон Папен</h3>
+                    <p><span class="highlight">Должность:</span> Вице-канцлер при Гитлере, посол в Турции.</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против мира.</p>
+                    <p><span class="highlight">Приговор:</span> Оправдан.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Артур Зейсс-Инкварт</h3>
+                    <p><span class="highlight">Должность:</span> Рейхскомиссар Нидерландов.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Смертная казнь.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Альберт Шпеер</h3>
+                    <p><span class="highlight">Должность:</span> Министр вооружений и военного производства.</p>
+                    <p><span class="highlight">Обвинения:</span> Военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> 20 лет тюрьмы.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Константин фон Нейрат</h3>
+                    <p><span class="highlight">Должность:</span> Министр иностранных дел, протектор Богемии и Моравии.</p>
+                    <p><span class="highlight">Обвинения:</span> Заговор, преступления против мира, военные преступления, преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> 15 лет тюрьмы (освобождён в 1954 году).</p>
+                </div>
+                <div class="person-info">
+                    <h3>Ганс Фриче</h3>
+                    <p><span class="highlight">Должность:</span> Глава отдела пропаганды в министерстве Геббельса.</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против человечности.</p>
+                    <p><span class="highlight">Приговор:</span> Оправдан.</p>
+                </div>
+                <div class="person-info">
+                    <h3>Ялмар Шахт</h3>
+                    <p><span class="highlight">Должность:</span> Президент Рейхсбанка, министр экономики.</p>
+                    <p><span class="highlight">Обвинения:</span> Преступления против мира.</p>
+                    <p><span class="highlight">Приговор:</span> Оправдан.</p>
+                </div>
+
+                <!-- Кнопки для переключения -->
+                <button onclick="prevSlide()">Назад</button>
+                <button onclick="nextSlide()">Вперёд</button>
+            </div>
+        </div>
+
+        <div class="note">
+            <h2>Итоги процесса</h2>
+            <p>Из 22 обвиняемых:</p>
+            <ul>
+                <li>12 приговорены к смертной казни (включая Мартина Бормана, осуждённого заочно);</li>
+                <li>3 получили пожизненное заключение;</li>
+                <li>4 получили сроки от 10 до 20 лет;</li>
+                <li>3 оправданы.</li>
+            </ul>
+            <p>Нюрнбергский процесс стал прецедентом для международного права. За ним последовали другие процессы (1946–1949).</p>
+        </div>
+
+        <div class="note">
+            <p>Дополнительно: <a href="https://museums.nuernberg.de/memorium-nuremberg-trials/" target="_blank">Официальный сайт Мемориального музея Нюрнбергских процессов</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const infos = document.querySelectorAll('.slider .person-info');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                infos[i].classList.remove('active');
+            });
+            slides[index].classList.add('active');
+            infos[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
